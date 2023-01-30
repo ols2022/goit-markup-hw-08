@@ -1,0 +1,142 @@
+.portfolio {
+    padding-bottom: 94px;
+}
+
+.projects-nav {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+
+    &__item:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.projects-nav__button {
+    padding: 6px 22px;
+
+    color: var(--button-text);
+    background-color: var(--button-bg-color);
+    
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 4px;
+    
+    transition: var(--transition-bg-color),
+        var(--transition-color),
+        var(--transition-shadow);
+
+    &:focus,
+    &:hover {
+        background-color: var(--main-accent-color);
+        color: var(--button-accent-text-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -30px;
+    margin-top: -30px;
+
+    &__thumb {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.projects-list__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px)/3);
+}
+
+.projects-list__link {
+    display: block;
+
+    transition: var(--transition-shadow);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+
+.projects-list__content-wrapper {
+    padding: 20px 24px;
+
+    border: 1px solid var(--portfolio-cards-border-color);
+    border-top: none;
+}
+
+.project-list__title {
+    margin-bottom: 4px;
+
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+
+.projects-list .section__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.projects-list-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .projects-list__link:hover & {
+        transform: translateY(0);
+    }
+}
+
+.projects-list-overlay__text {
+    position: absolute;
+    top: 0;
+
+    display: inline-block;
+    text-align: left;
+
+    padding-top: 62px;
+    padding-bottom: 62px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .projects-list__link:hover & {
+        opacity: 1;
+    }
+}

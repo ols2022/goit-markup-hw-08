@@ -1,0 +1,75 @@
+/* main background color = #FFFFFF  */
+
+/* Hero background color = #2F303A */
+/* Hero text color = #FFFFFF */
+
+/* Team section bg color =  */
+
+/* header color =  #FFFFFF*/
+/* footer color = #2F303A */
+
+/* <h1,h2.h3> and button text color - main text color = #212121 */
+/* <p> text color and mailto: with tel: = #757575 */
+
+/* button text accent = #FFFFFF  */
+/* button bg color = #F5F4FA */
+/* button here bg color:hover = #188CE8 */
+
+/* main accent color = #2196F3 */
+/* logo Studio accent = #000000 */
+
+/* Icon main color = #AFB1B8 */
+/* Icon main bg colof = main background color = #FFFFFF */
+/* Icon benefits bg color =  #F5F4FA*/
+/* Icon hover color = main accent color = #2196F3 */
+/* Icon mailto and tel color =p>text color and mailto: with tel: = #757575 */
+/* Icon footer color =  = #FFFFFF */
+/* Icon footer bg color = rgba(255, 255, 255, 0.1); */
+
+:root {
+    --main-bg-color: #FFFFFF;
+    --footer-bg-color: #2F303A;
+    --hero-bg-color: #2F303A;
+    --team-section-bg-color: #F5F4FA;
+
+    --hero-text-color: #FFFFFF;
+    --main-accent-color: #2196F3;
+    --logo-studio-color: #000000;
+    --main-text-color: #212121;
+    --p-text-color: #757575;
+
+    --button-text: #212121;
+    --button-bg-color: #F5F4FA;
+    --button-hero-bg-color_hover: #188CE8;
+    --button-accent-text-color: #FFFFFF;
+
+
+    --portfolio-cards-border-color: #EEEEEE;
+
+    --icon-main-color: #AFB1B8;
+    --icon-benefits-bg-color: #F5F4FA;
+    --icon-footer-bg-color: rgba(255, 255, 255, 0.1);
+    --icon-footer-color: #ffffff;
+
+    --transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bg-color: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-border: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===========Common components============ */
+
+.site-body {
+    color: var(--main-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+
+    background-color: var(--main-bg-color);
+}
+
+/* ============Main page=================== */
+
+.main {
+    background-color: var(--main-bg-color);
+}
