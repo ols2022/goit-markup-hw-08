@@ -128,12 +128,11 @@ img {
 
 .logo__header {
   margin-right: 94px;
+  letter-spacing: 0.03em;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   text-decoration: none;
 }
 .logo__header_left {
@@ -374,23 +373,22 @@ img {
 }
 
 .contact-form__send-button {
-  margin-top: 30px;
   display: block;
-  min-width: 200px;
   padding: 10px 10px;
+  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
+  min-width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
   font-family: inherit;
-  background-color: var(--main-accent-color);
-  color: var(--button-accent-text-color);
   border: none;
   border-radius: 4px;
-  border-color: transparent;
+  background-color: var(--main-accent-color);
+  color: var(--button-accent-text-color);
   cursor: pointer;
   -webkit-transition: var(--transition-bg-color), var(--transition-shadow);
   transition: var(--transition-bg-color), var(--transition-shadow);
@@ -531,21 +529,21 @@ img {
 
 .hero__button {
   display: block;
-  min-width: 200px;
   padding: 10px 10px;
   margin-right: auto;
   margin-left: auto;
+  min-width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
   font-family: inherit;
-  background-color: var(--main-accent-color);
-  color: var(--button-accent-text-color);
   border: none;
   border-radius: 4px;
-  border-color: transparent;
+  background-color: var(--main-accent-color);
+  color: var(--button-accent-text-color);
+  cursor: pointer;
   -webkit-transition: var(--transition-bg-color), var(--transition-shadow);
   transition: var(--transition-bg-color), var(--transition-shadow);
 }
@@ -874,9 +872,9 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: var(--transition-bg-color);
   transition: var(--transition-bg-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-social__link:hover, .footer-social__link:focus {
   background-color: var(--main-accent-color);
@@ -952,22 +950,18 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 200px;
   padding: 10px 28px 10px 28px;
+  min-width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /* text-align: left; */
+  text-align: center;
   letter-spacing: 0.06em;
   font-family: inherit;
+  border: none;
+  border-radius: 4px;
   background-color: var(--main-accent-color);
   color: var(--button-accent-text-color);
-  /* border: 1px, solid, transparent; */
-  border-radius: 4px;
-  border: none;
   cursor: pointer;
   -webkit-transition: var(--transition-bg-color), var(--transition-shadow);
   transition: var(--transition-bg-color), var(--transition-shadow);

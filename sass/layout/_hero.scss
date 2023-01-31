@@ -29,32 +29,11 @@
 
 .hero__button {
     display: block;
-
-    min-width: 200px;
+    
     padding: 10px 10px;
     margin-right: auto;
     margin-left: auto;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: center;
-    letter-spacing: 0.06em;
-    font-family: inherit;
-
-    background-color: var(--main-accent-color);
-    color: var(--button-accent-text-color);
-    border: none;
-    border-radius: 4px;
-    border-color: transparent;
-
-    transition: var(--transition-bg-color), var(--transition-shadow);
-
-    &:focus,
-    &:hover {
-        background-color: var(--button-hero-bg-color_hover);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-    }
+    @include common-button
 }
 

@@ -55,20 +55,8 @@
 }
 
 .social-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-
-    transition: var(--transition-bg-color);
-
-    &:hover,
-    &:focus {
-        background-color: var(--main-accent-color);
-    }
+    
+    @include common-social__link;
 }
 
 .social-list__icon {
