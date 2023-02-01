@@ -1,6 +1,6 @@
 .logo__header {
-    margin-right: 94px;
-    letter-spacing: 0.03em;
+    // margin-right: 94px;
+    // letter-spacing: 0.03em;
 
     @include common-logo;
 
@@ -11,5 +11,11 @@
     &_right {
         color: var(--logo-studio-color);
     }    
+}
+
+@media screen and (min-width: 1200px) {
+    .logo__header {
+        @include common-logo__desktop
+    }
 }
 
