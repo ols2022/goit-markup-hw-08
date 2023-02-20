@@ -2,6 +2,8 @@
     display: block;
     margin-bottom: 20px;
 
+    text-align: center;
+
     @include common-logo;
 
     &_left {
@@ -13,3 +15,10 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .logo__footer {
+    text-align: start;
+    font-size: 26px;
+    line-height: 1.19;
+    }
+}
