@@ -1,15 +1,12 @@
 .customers-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
 
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-right: auto;
+    margin-left: auto;
 
-    &__item {
+    &__item:not(:last-child) {
 
-        margin-right: 30px;
         margin-bottom: 30px;
-        flex-basis: calc(100% / 2 - 30px);
     }
 
     &__thumb {
@@ -47,6 +44,29 @@
     .customers-list__link:hover &,
     .customers-list__link:focus & {
         fill: var(--main-accent-color);
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+    
+        margin-right: -30px;
+        margin-bottom: -30px;
+    
+        &__item {
+    
+            margin-right: 30px;
+            margin-bottom: 30px;
+            flex-basis: calc(100% / 2 - 30px);
+        }
+    
+        &__thumb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
