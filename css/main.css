@@ -204,6 +204,14 @@ button {
   }
 }
 
+.mobile-burger__icon {
+  -webkit-transition: var(--transition-fill);
+  transition: var(--transition-fill);
+}
+.mobile-burger__button:hover .mobile-burger__icon, .mobile-burger__button:focus .mobile-burger__icon {
+  fill: var(--main-accent-color);
+}
+
 .mobile-menu {
   position: absolute;
   top: 0;
@@ -250,6 +258,14 @@ button {
 .mobile-menu__close-button:focus, .mobile-menu__close-button:hover {
   fill: var(--main-accent-color);
   outline: none;
+}
+
+.mobile-menu__close-icon {
+  -webkit-transition: var(--transition-fill);
+  transition: var(--transition-fill);
+}
+.mobile-menu__close-button:hover .mobile-menu__close-icon, .mobile-menu__close-button:focus .mobile-menu__close-icon {
+  fill: var(--main-accent-color);
 }
 
 .mobile-menu__nav-items:not(:last-child) {

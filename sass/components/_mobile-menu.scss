@@ -19,6 +19,16 @@
     }
 }
 
+ .mobile-burger__icon {
+    
+     transition: var(--transition-fill);
+
+     .mobile-burger__button:hover &,
+     .mobile-burger__button:focus & {
+         fill: var(--main-accent-color);
+     }
+ }
+
 .mobile-menu {
     position: absolute;
     top: 0;
@@ -78,6 +88,16 @@
     &:hover {
         fill: var(--main-accent-color);
         outline: none;
+    }
+}
+
+.mobile-menu__close-icon {
+    
+    transition: var(--transition-fill);
+
+    .mobile-menu__close-button:hover &,
+    .mobile-menu__close-button:focus & {
+        fill: var(--main-accent-color);
     }
 }
 
