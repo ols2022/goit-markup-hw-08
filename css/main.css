@@ -1478,6 +1478,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   -webkit-transition: var(--transition-shadow);
   transition: var(--transition-shadow);
 }
