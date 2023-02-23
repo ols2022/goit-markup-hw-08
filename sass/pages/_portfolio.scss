@@ -154,6 +154,29 @@
     .projects-nav__item:not(:last-child) {
         margin-bottom: 15px;
     }
+
+    // .projects-list-overlay {
+    //     vertical-align: text-top;
+    // }
+
+    .projects-list-overlay__text {
+
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+
+        padding-top: 40px;
+        padding-bottom: 30px;
+
+        padding-left: 24px;
+        padding-right: 24px;
+
+        font-weight: 400;
+        // font-size: 15px;
+        font-size: 4vw;
+        line-height: 1.55;
+    
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
